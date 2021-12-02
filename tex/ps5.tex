@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{textcmds}
+\usepackage{csquotes}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[style=authoryear,
+backend=biber,
+giveninits=true,
+uniquelist = false,
+uniquename=init,
+isbn=false,
+maxcitenames=2,
+dashed=false,
+maxbibnames=999,
+doi=false,
+url=false]{biblatex}
+\addbibresource{bibliography.bib}
+%--------------------------------------------------------------
+%
+% HERE IS WHERE THE DOCUMENT STARTS!
+%
+%--------------------------------------------------------------
+\begin{document}
+
+This problem set is based on  \cite{Valrian_Inter_Micro}
+
+\subsubsection*{Problem 9: Monopoly Behaviour }
+ Let us retake the taquer\'ia problem from last problem set.
+ Let us first focus on the short run and suppose that the
+ production function is
+\begin{equation*}
+  y = h(l) = cl^{1-\alpha}
+\end{equation*}
+
+\begin{itemize}
+  \item If \(\alpha =0\), what type of technology is this? What is the taquer\'ia's
+  profit maximization problem? What is the minimum taco price for which
+  the taquer\'ia is willing to not shutdown? Discuss why.
+  \item Suppose we are now talking about the long run. What other condition can we impose to
+  give the problem more \qq{structure}?
+  \item Now suppose \(\alpha = \frac{1}{2}\). What type of technology is this? Solve
+  the taquer\'ia's optimization problem. What is the condition the optimal level
+  of output solves?
+  \item Now suppose that this is the only taquer\'ia in town. The town's taco demand
+  is given by the inverse demand function \(Q_d(p) = a-bp\). How is the taquer\'ia's
+  optimization problem affected? Is the equilibrium affected? If so, how? Show your
+  answer graphically.
+\end{itemize}
+\newpage
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{textcmds}
+\usepackage{csquotes}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[style=authoryear,
+backend=biber,
+giveninits=true,
+uniquelist = false,
+uniquename=init,
+isbn=false,
+maxcitenames=2,
+dashed=false,
+maxbibnames=999,
+doi=false,
+url=false]{biblatex}
+\addbibresource{bibliography.bib}
+%--------------------------------------------------------------
+%
+% HERE IS WHERE THE DOCUMENT STARTS!
+%
+%--------------------------------------------------------------
+\begin{document}
+
+This problem set is based on Chapter 15 \& 16 of \cite{Valrian_Inter_Micro}
+
+\subsubsection*{Problem 6: Market Demand and Elasticity}
+Suppose the fisherman we talked about last time faces the following inverse
+demand curve in the local market:
+\begin{equation*}
+  P(q) = a-bq
+\end{equation*}
+\begin{itemize}
+  \item What is the demand curve he faces? Solve for it.
+  \item Derive a close form solution for the price elasticity of demand.
+  \item At which point is the price elasticity of demand \(0, -1\) and \(-\infty\)
+\end{itemize}
+Now suppose that the inverse demand function he faces is instead given by:
+\begin{equation*}
+  p(q) = \frac{1}{A}q^{\frac{1}{-\epsilon}}
+\end{equation*}
+\begin{itemize}
+  \item What is the price elasticity of demand?
+  \item What is the fisherman's \textit{revenue} \(R\), as a function of price \(p\)?
+  \item What is the relationship between the fisherman's revenue and the price
+  elasticity of demand in the local market?
+  \item What is the key parameter, \(A\) or \(\epsilon\)?
+  \item For which values of the key parameter you just identified does the fisherman's
+  revenue increases, decreases or stays the same if he increases the price at which
+  he sells his fish?
+\end{itemize}
+
+ \newpage
+\subsubsection*{Problem 7: Market Equilibrium}
+Let us follow the exercise in the book. Suppose that the local taco market has
+demand function of \(Q_D(p) = a-bp\) and a supply funtion of \(Q_S = dp - c\)
+\begin{itemize}
+  \item Graph both curves.
+  \item What is the market equilibrium? Derive the close-form expression.
+  \item Now suppose a local politician implements a per-taco tax. What happens
+  to the local taco market? Is there deadweight loss? Who pays for the tax,
+  taqueros (suppliers) or taco-eaters (consumers)?
+  \item Now imagine that, instead of analyzing the taco market, we are analyzing
+  the market for insulin. A representative person in the insulin market requires
+  at least \(Q_{ins}\) per day to stay alive, not more, not less. Suppose that
+  insulin suppliers share the same supply curve as taqueros. What can you say
+  about insulin's price elasticity of demand?
+  \item If a local politician decided to implement a tax on insulin, who would bear
+  the tax? Would there be a deadweight loss? Discuss.
+  \item Now imagine that, instead of analyzing the insulin market, we are analyzing
+  the market for a specific type of tree that takes thousands of years to grow.
+  Suppose that demand for this tree is \(Q_D(p) = a-bp\), and that the amount of
+  tress ready to harvest is \(Q_{trees}\). If a local politician decided to implement
+  a per-tree tax, who would bear the tax?
+\end{itemize}
+\newpage
+\printbibliography
+
+\end{document}
