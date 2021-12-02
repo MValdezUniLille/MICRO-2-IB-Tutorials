@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{textcmds}
+\usepackage{csquotes}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage[style=authoryear,
+backend=biber,
+giveninits=true,
+uniquelist = false,
+uniquename=init,
+isbn=false,
+maxcitenames=2,
+dashed=false,
+maxbibnames=999,
+doi=false,
+url=false]{biblatex}
+\addbibresource{bibliography.bib}
+%--------------------------------------------------------------
+%
+% HERE IS WHERE THE DOCUMENT STARTS!
+%
+%--------------------------------------------------------------
+\begin{document}
+
+This problem set is based on  \cite{Valrian_Inter_Micro}
+
+\subsubsection*{Problem 8: Technology, Costs and Profit Maximization }
+Let us now inmerse ourselves in the taco market. We focus on the supply-side.
+Suppose that there are enough taquerias to support a competitive market,
+and suppose that they all use the same technology, captured by a
+Cobb-Douglas production function that takes as input the amount of
+available \textit{capital equipment \qq{k}} and amount of \textit{labor \qq{l}}
+and outputs tacos produced.
+We will make use of the idea of a \textit{representative taqueria}.
+The production function is:
+\begin{equation*}
+  y = f(k,l) = k^{\alpha}l^{1-\alpha}
+\end{equation*}
+Where \(\alpha \in (0,1)\).
+\begin{itemize}
+  \item Fix output at \(\tilde{y}\). Draw the isoquant graph.
+  (Hint: on \((k,l)-space\)).
+  \item What is the marginal product of capital? And of labor?
+  \item What type of production function is this?
+  (Constant returns to scale, decreasing, increasing?), why?
+  \item What is the technical rate of substitution?
+  \item Suppose that \(r, w\) are the prices of 1 unit of capital and labor,
+  respectively, while a single taco sells at price \(p\).
+  Set up the profit maximization problem of the firm, but do not solve it yet.
+  What are the endogenous variables? i.e., what are we solving for?
+  How realistic is this model of firm behaviour? Discuss.
+  \item Suppose total costs are equal to \(\bar{c}\). Draw the isocost line.
+  \item Suppose that capital is fixed at \(\tilde{k}\). How is the firm's profit
+  maximization problem affected? What are we now solving for?
+  \item Solve for the optimal labor demand. What is the optimality condition that
+  must be satisfied for profits to reach a maximum?
+  \item Do some comparative statics: What happens to output
+  if \(p\) moves? If \(w\) moves? If \(r\) moves?
+  \item Now suppose that the taqueria is deciding how much capital to acquire in
+  order to maximize profits. How does this change the taqueria's problem?
+  \item Try to find the optimal factor allocation. What do you notice? What can
+  you do about it?
+\end{itemize}
+\newpage
+
+\printbibliography
+
+\end{document}
